@@ -86,6 +86,7 @@
   "social_logins",
   "api_access",
   "api_key",
+  "secret_key",
   "generate_keys",
   "column_break_65",
   "api_secret",
@@ -676,6 +677,12 @@
    "fieldtype": "Link",
    "label": "Company",
    "options": "Company"
+  },
+  {
+   "fieldname": "secret_key",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Secret Key"
   }
  ],
  "icon": "fa fa-user",
@@ -738,7 +745,7 @@
    "link_fieldname": "user"
   }
  ],
- "modified": "2023-10-27 17:24:44.098392",
+ "modified": "2023-11-12 18:16:30.680025",
  "modified_by": "Administrator",
  "module": "Core",
  "name": "User",
