@@ -7,6 +7,7 @@
  "engine": "InnoDB",
  "field_order": [
   "role_profile",
+  "selectable_from_web",
   "roles_html",
   "roles"
  ],
@@ -34,6 +35,12 @@
    "permlevel": 1,
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "selectable_from_web",
+   "fieldtype": "Check",
+   "label": "Selectable From Web"
   }
  ],
  "links": [
@@ -42,7 +49,7 @@
    "link_fieldname": "role_profile_name"
   }
  ],
- "modified": "2021-12-03 15:45:45.270963",
+ "modified": "2024-01-27 18:11:57.784705",
  "modified_by": "Administrator",
  "module": "Core",
  "name": "Role Profile",
@@ -75,6 +82,7 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
+ "states": [],
  "title_field": "role_profile",
  "track_changes": 1
 }
