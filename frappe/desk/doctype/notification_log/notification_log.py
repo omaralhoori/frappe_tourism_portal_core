@@ -184,3 +184,8 @@ def set_notifications_as_unseen(user):
 		frappe.db.set_value("Notification Settings", user, "seen", 0, update_modified=False)
 	except frappe.DoesNotExistError:
 		return
+
+@frappe.whitelist()
+def dismiss_notification(docname):
+	if docname:
+		frappe.db.delete("Notification Log", {"name": docname, "for_user": frappe.session.user})
