@@ -10,6 +10,8 @@ no_cache = 1
 
 def get_context(context):
 	message_context = frappe._dict()
+	context.header_not_fixed=True
+	
 	if hasattr(frappe.local, "message"):
 		message_context["header"] = frappe.local.message_title
 		message_context["title"] = strip_html_tags(frappe.local.message_title)
