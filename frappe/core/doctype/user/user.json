@@ -676,7 +676,8 @@
    "fieldname": "company",
    "fieldtype": "Link",
    "label": "Company",
-   "options": "Company"
+   "options": "Company",
+   "permlevel": 1
   },
   {
    "fieldname": "secret_key",
@@ -745,7 +746,7 @@
    "link_fieldname": "user"
   }
  ],
- "modified": "2023-11-12 18:16:30.680025",
+ "modified": "2024-03-13 16:02:50.676758",
  "modified_by": "Administrator",
  "module": "Core",
  "name": "User",
